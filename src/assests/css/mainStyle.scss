@@ -44,8 +44,11 @@ $Csucess:hsl(104, 73%, 29%);
   text-align: center;
 }
 .heropanel{
+  display:relative;
   background:url("https://images.unsplash.com/photo-1538402074774-8e624f3f7e5d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e0293f0d23f26cf12f31eba13a264bc6&auto=format&fit=crop&w=2775&q=80") no-repeat fixed;
   background-size: cover;
+  
+  
 }
 .heropanel.blurred-image {
   opacity:0;
@@ -129,7 +132,8 @@ $Csucess:hsl(104, 73%, 29%);
   display: relative;
   max-width: 500px;
   height: 75vmin;
-  padding: 1.3rem;
+  padding: 2rem;
+  margin: 1rem;
 }
 .appLogoContainer{
   display: inline-block;
@@ -213,7 +217,13 @@ $Csucess:hsl(104, 73%, 29%);
   background: $snow4;
   color: black;
 }
-//------------------trying to import the 
+//------------------trying to import the parallax
+
+.testing1{
+  display:absolute;
+  z-index: -100;
+  top:0;
+}
 
 /*---------------------------------------nav/cart/sliderside*/
 

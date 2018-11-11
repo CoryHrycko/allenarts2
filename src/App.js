@@ -6,7 +6,7 @@ import Toolbar from './components/Toolbar/Toolbar.jsx';
 import SideDrawer from './components/SideDrawer/SideDrawer.jsx'
 import Backdrop from './components/Backdrop/Backdrop.jsx';
 import Footer from './containers/footer/Footer.js'
-import { ParallaxProvider } from 'react-scroll-parallax';
+import ParallaxImage from 'react-image-parallax2'
 
 
 const mapStateToProps = state => ({
@@ -45,9 +45,8 @@ backdropClickHandler=()=>{
 
 
     return (
-  <ParallaxProvider>
     <div className="App">
-    <header className="heropanel">
+    <header  className="heropanel">
       <div className="v-header container">
         <div className="appLogoContainer">
           <img src={Capture} className="App-logo" alt="logo" />
@@ -78,7 +77,6 @@ backdropClickHandler=()=>{
    </div>
    <Footer />
    </div>
-  </ParallaxProvider>
   );
   
  }
