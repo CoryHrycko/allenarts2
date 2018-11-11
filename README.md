@@ -1,4 +1,15 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a prototype for a website. 
+
+
+
+
+---------------------------------------------------------------
+
+
+
+
+
+roject was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
