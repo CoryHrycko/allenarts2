@@ -6,8 +6,7 @@ import Toolbar from './components/Toolbar/Toolbar.jsx';
 import SideDrawer from './components/SideDrawer/SideDrawer.jsx'
 import Backdrop from './components/Backdrop/Backdrop.jsx';
 import Footer from './containers/footer/Footer.js'
-import ParallaxImage from 'react-image-parallax2'
-
+import { CSSTransition } from "react-transition-group";
 
 const mapStateToProps = state => ({
   ...state
@@ -21,6 +20,14 @@ simpleAction = (event) => {
   this.props.simpleAction();
 };*/
 class App extends Component {  
+
+  constructor(props){
+    super(props);
+    this.state = {
+      appearHome: true,
+      property: data.properties[0]
+    }
+  }
   state = {
     sideDrawerOpen: false
   };
@@ -47,6 +54,13 @@ backdropClickHandler=()=>{
     return (
     <div className="App">
     <header  className="heropanel">
+    <CSSTransition
+    in={appearHome}
+    appear={true}
+    timeout={300}
+    classNames="fade"
+    
+    >
       <div className="v-header container">
         <div className="appLogoContainer">
           <img src={Capture} className="App-logo" alt="logo" />
@@ -58,6 +72,7 @@ backdropClickHandler=()=>{
         <SideDrawer show={this.state.sideDrawerOpen}/>
         {backdrop}
       </div>
+      </CSSTransition>
     </header>
     <div className="mainBg">
      <div className="mainShape">

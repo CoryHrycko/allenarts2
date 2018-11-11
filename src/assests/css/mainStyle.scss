@@ -660,6 +660,16 @@ $Csucess:hsl(104, 73%, 29%);
   left: 25%;
   width: 50%;
 }
+
+//-------------------------------------Appear on page load
+.fade-appear {
+  opacity: 0;
+  z-index: 1;
+}
+.fade-appear.fade-appear-active {
+opacity: 1; 
+transition: opacity 1000ms linear;
+}
 // ------------------------------------media queries
 
 
