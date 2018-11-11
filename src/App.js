@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Capture from './assests/Capture.JPG';
-import Denise from './assests/deniseJans.jpg'
 import { simpleAction } from './actions/simpleAction'
 import Toolbar from './components/Toolbar/Toolbar.jsx';
 import SideDrawer from './components/SideDrawer/SideDrawer.jsx'
