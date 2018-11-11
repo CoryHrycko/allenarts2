@@ -6,6 +6,7 @@ import Toolbar from './components/Toolbar/Toolbar.jsx';
 import SideDrawer from './components/SideDrawer/SideDrawer.jsx'
 import Backdrop from './components/Backdrop/Backdrop.jsx';
 import Footer from './containers/footer/Footer.js'
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 
 const mapStateToProps = state => ({
@@ -35,6 +36,7 @@ backdropClickHandler=()=>{
 
 
   render() {
+    
     let backdrop;
 
     if (this.state.sideDrawerOpen){
@@ -43,6 +45,7 @@ backdropClickHandler=()=>{
 
 
     return (
+  <ParallaxProvider>
     <div className="App">
     <header className="heropanel">
       <div className="v-header container">
@@ -75,8 +78,9 @@ backdropClickHandler=()=>{
    </div>
    <Footer />
    </div>
-    
+  </ParallaxProvider>
   );
+  
  }
 };
 

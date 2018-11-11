@@ -46,7 +46,8 @@ code {
 }
 
 .mainBg {
-  background: #ede8e8;
+  background: #ede8e8 url("https://images.unsplash.com/photo-1538402074774-8e624f3f7e5d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e0293f0d23f26cf12f31eba13a264bc6&auto=format&fit=crop&w=2775&q=80") no-repeat fixed;
+  background-size: cover;
 }
 
 .mainShape {
@@ -66,7 +67,7 @@ code {
   left: 0;
   width: 100px;
   width: 1000px;
-  background-color: #8b8989;
+  background-color: RGB(139, 137, 137, 0.8);
   border-radius: 3px;
   height: 100vh;
   max-width: 1200px;
@@ -75,6 +76,7 @@ code {
 .mainShapeTitle {
   grid-column: 2/-2;
   background: #ede8e8;
+  opacity: 1;
   -ms-flex-item-align: baseline;
       align-self: baseline;
 }
@@ -685,6 +687,79 @@ code {
   display: -ms-flexbox;
   display: flex;
   font-size: .7rem;
+}
+
+:local(.root) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+:local(.scroll) {
+  position: absolute;
+  bottom: 5em;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: purple;
+  font-weight: 500;
+}
+
+:local(.container) {
+  position: relative;
+  width: 25em;
+}
+
+:local(.ring) {
+  position: relative;
+  z-index: 2;
+}
+
+:local(.circle) {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 70%;
+  height: 70%;
+  z-index: 1;
+}
+
+:local(.circle) .parallax-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 3px solid purple;
+  border-radius: 50%;
+}
+
+:local(.circleInner) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 3px solid purple;
+  border-radius: 50%;
+}
+
+:local(.hemispheres) {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
 }
 
 @media (max-width: 768px) {
