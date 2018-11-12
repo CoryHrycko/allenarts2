@@ -554,12 +554,15 @@ $Csucess:hsl(104, 73%, 29%);
   background: $snow4;
   height: 3em;
   z-index: 150;
+  transition: 1000ms;
 }
 .toolBarNav{
   display: flex;
   height:100%;
   align-items: center;
   padding: 0 1rem;
+  transition: 1000ms;
+  
 }
 .toolBarLogo{
   margin-left: 1rem;
@@ -605,7 +608,7 @@ $Csucess:hsl(104, 73%, 29%);
 }
 .fade-appear.fade-appear-active {
 opacity: 1; 
-transition: opacity 5000ms linear;
+transition: opacity 1000ms linear;
 }
 // ------------------------------------media queries
 

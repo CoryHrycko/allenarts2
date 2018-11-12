@@ -99,11 +99,10 @@ backdropClickHandler=()=>{
         {backdrop}
       </div>
          {/* <Home property={property} /> */}
-        </CSSTransition>
 
+        </CSSTransition>
         <Toolbar drawerClickHandler={this.drawerToggleClickHandler}/>
         <SideDrawer show={this.state.sideDrawerOpen}/> 
-
   
     </header>
     <div className="mainBg">
@@ -122,17 +121,6 @@ backdropClickHandler=()=>{
    </div>
    </div>
    </div>
-   <button onClick={() => this.toggleAppear()}>Appear: {`${appearHome}`}</button>
-   <button onClick={() => this.nextProperty()} disabled={property.index === data.properties.length-1}>Next</button>
-   <button onClick={() => this.prevProperty()} disabled={property.index === 0}>Prev</button>
-        <CSSTransition
-        in={appearHome}
-        appear={true}
-        timeout={3000}
-        classNames="fade"
-        >
-        <Home property={property} />
-        </CSSTransition>
    <Footer />
    </div>
   );
