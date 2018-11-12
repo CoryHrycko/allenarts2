@@ -87,6 +87,7 @@ $Csucess:hsl(104, 73%, 29%);
   left: 0;
   width: 100px;
   width: 1000px;
+  padding-bottom: 600px;
   background-color: RGB(139,137,137,.8)
   ;
   
@@ -98,6 +99,7 @@ $Csucess:hsl(104, 73%, 29%);
 // ---------------------------grid items
 
 .mainShapeTitle{
+  display:inline-block;
   grid-column: 2/-2;
   background:$snow2;
   opacity: 1;
@@ -600,7 +602,6 @@ $Csucess:hsl(104, 73%, 29%);
   font-size: .7rem;
 }
 //------------------------------------intro parallax
-
 //-------------------------------------Appear on page load
 .fade-appear {
   opacity: 0;
@@ -609,6 +610,20 @@ $Csucess:hsl(104, 73%, 29%);
 .fade-appear.fade-appear-active {
 opacity: 1; 
 transition: opacity 1000ms linear;
+}
+// ----------------------------------- exit
+.slide-exit {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  
+}
+.slide-exit.slide-exit-active {
+  opacity: 0;
+  transform: scale(0.97) translateY(5px);
+  transition: opacity 1500ms linear, transform 1500ms ease-out;
+}
+.slide-exit-done {
+opacity: 0;
 }
 // ------------------------------------media queries
 
