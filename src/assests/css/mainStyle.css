@@ -88,7 +88,7 @@ code {
   background: #342718;
   -ms-grid-column: 2;
   grid-column: 2;
-  grid-row: 2/auto;
+  grid-row: 4/auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -96,15 +96,14 @@ code {
 
 .mainShapeTitle3 {
   background: #ede8e8;
-  grid-row: 2/auto;
+  grid-row: 4/auto;
   -ms-grid-column: 3;
   grid-column: 3;
 }
 
 .mainShapeTitle4 {
   background: #342718;
-  -ms-grid-row: 2;
-  grid-row: 2;
+  grid-row: 4/auto;
   -ms-grid-column: 4;
   grid-column: 4;
 }
@@ -732,6 +731,54 @@ code {
 
 .slide-exit-done {
   opacity: 0;
+}
+
+/* Card */
+.card-container {
+  position: relative;
+  max-width: 226px;
+  margin: 0 auto;
+}
+
+.card {
+  border: 3px #f3f3f3 solid;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  background-color: #f3f3f3;
+  padding: 10px;
+  max-width: 220px;
+  text-align: left;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.card:hover {
+  background-color: #f3f3f3;
+  border: #f3f3f3 solid 1px;
+}
+
+.card img {
+  max-width: calc(100%);
+  margin: 0 auto;
+  display: block;
+}
+
+.card .index {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  line-height: 20px;
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  padding: 0 10px;
 }
 
 @media (max-width: 768px) {

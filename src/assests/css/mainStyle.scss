@@ -108,17 +108,17 @@ $Csucess:hsl(104, 73%, 29%);
 .mainShapeTitle2{
   background:$cafeamericano;
   grid-column: 2;
-  grid-row:2/auto;
+  grid-row:4/auto;
   justify-content: center;
 }
 .mainShapeTitle3{
   background:$snow2;
-  grid-row:2/auto;
+  grid-row:4/auto;
   grid-column: 3;
 }
 .mainShapeTitle4{
   background:$cafeamericano;
-  grid-row:2;
+  grid-row:4/auto;
   grid-column: 4;
 }
 
@@ -624,6 +624,50 @@ transition: opacity 1000ms linear;
 }
 .slide-exit-done {
 opacity: 0;
+}
+// ----------------------------------------cards
+/* Card */
+.card-container {
+  position: relative;
+  max-width: 226px;
+  margin: 0 auto;
+}
+
+.card {
+  border: 3px #f3f3f3 solid;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s linear;
+  cursor: pointer;
+  background-color: #f3f3f3;
+  padding: 10px;
+  max-width: 220px;
+  text-align: left;
+  margin: 0 auto;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.card:hover {
+  background-color: #f3f3f3;
+  border: #f3f3f3 solid 1px;
+}
+.card img {
+  max-width: calc(100%);
+  margin: 0 auto;
+  display: block;
+}
+.card .index {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  line-height: 20px;
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  padding: 0 10px;
 }
 // ------------------------------------media queries
 
