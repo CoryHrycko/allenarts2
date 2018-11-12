@@ -6,8 +6,11 @@ import Toolbar from './components/Toolbar/Toolbar.jsx';
 import SideDrawer from './components/SideDrawer/SideDrawer.jsx'
 import Backdrop from './components/Backdrop/Backdrop.jsx';
 import Footer from './containers/footer/Footer.js'
-import { CSSTransition } from "react-transition-group";
+// import { CSSTransition } from "react-transition-group";
+// import data from './assests/Pics/data'
+// import Home from "./assests/Pics/homes";
 
+ 
 const mapStateToProps = state => ({
   ...state
  }); 
@@ -19,15 +22,37 @@ const mapStateToProps = state => ({
 simpleAction = (event) => {
   this.props.simpleAction();
 };*/
-class App extends Component {  
+class App extends Component {
 
-  constructor(props){
-    super(props);
-    this.state = {
-      appearHome: true,
-      property: data.properties[0]
-    }
-  }
+  // constructor(props){
+  //   super(props);
+  //   this.state = {
+  //     appearHome: true,
+  //     property: data.properties[0]
+  //   }
+  // }
+
+  // toggleAppear = () => {
+  //   this.setState({
+  //     appearHome: !this.state.appearHome
+  //   })
+  // }
+
+  // nextProperty = () => {
+  //   const newIndex = this.state.property.index+1;
+  //   this.setState({
+  //     property: data.properties[newIndex]
+  //   })
+  // }
+
+  // prevProperty = () => {
+  //   const newIndex = this.state.property.index-1;
+  //   this.setState({
+  //     property: data.properties[newIndex]
+  //   })
+  // }
+
+
   state = {
     sideDrawerOpen: false
   };
@@ -43,7 +68,7 @@ backdropClickHandler=()=>{
 
 
   render() {
-    
+    // const {appearHome, property} = this.state;
     let backdrop;
 
     if (this.state.sideDrawerOpen){
@@ -53,26 +78,33 @@ backdropClickHandler=()=>{
 
     return (
     <div className="App">
-    <header  className="heropanel">
-    <CSSTransition
-    in={appearHome}
-    appear={true}
-    timeout={300}
-    classNames="fade"
-    
-    >
+      <header  className="heropanel">
+        {/* <button onClick={() => this.toggleAppear()}>Appear: {`${appearHome}`}</button>
+        <button onClick={() => this.nextProperty()} disabled={property.index === data.properties.length-1}>Next</button>
+        <button onClick={() => this.prevProperty()} disabled={property.index === 0}>Prev</button>
+        <CSSTransition
+        in={appearHome}
+        appear={true}
+        timeout={1000}
+        classNames="fade"> */}
+
+
       <div className="v-header container">
         <div className="appLogoContainer">
           <img src={Capture} className="App-logo" alt="logo" />
           </div>
         <div className="AppTitle">
           <h1 className="App-title">Allen Arts Music</h1>
-        </div>
-        <Toolbar drawerClickHandler={this.drawerToggleClickHandler}/>
-        <SideDrawer show={this.state.sideDrawerOpen}/>
+        </div> 
         {backdrop}
       </div>
-      </CSSTransition>
+        {/* <Home property={property} />
+        </CSSTransition> */}
+
+        <Toolbar drawerClickHandler={this.drawerToggleClickHandler}/>
+        <SideDrawer show={this.state.sideDrawerOpen}/>
+
+  
     </header>
     <div className="mainBg">
      <div className="mainShape">
