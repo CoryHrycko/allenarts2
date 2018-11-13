@@ -346,7 +346,6 @@ $Csucess:hsl(104, 73%, 29%);
   list-style: none;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   background: $snow4;
 
 }
@@ -357,6 +356,7 @@ $Csucess:hsl(104, 73%, 29%);
 
 .sideDrawer a{
   columns: $snow4;
+  justify-content: baseline;
   text-decoration: none;
 }
 .sideDrawer a:hover,
@@ -629,7 +629,7 @@ opacity: 0;
 /* Card */
 .card-container {
   position: relative;
-  max-width: 226px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -640,7 +640,7 @@ opacity: 0;
   cursor: pointer;
   background-color: #f3f3f3;
   padding: 10px;
-  max-width: 220px;
+  max-width: 5000px;
   text-align: left;
   margin: 0 auto;
 
@@ -661,7 +661,7 @@ opacity: 0;
 .card .index {
   background-color: rgba(0, 0, 0, 0.2);
   color: #fff;
-  line-height: 20px;
+  line-height: inherit;
   font-size: 14px;
   position: absolute;
   top: 0;

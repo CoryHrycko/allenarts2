@@ -384,9 +384,6 @@ code {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background: #8b8989;
 }
 
@@ -397,6 +394,9 @@ code {
 .sideDrawer a {
   -webkit-columns: #8b8989;
           columns: #8b8989;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
   text-decoration: none;
 }
 
@@ -736,7 +736,7 @@ code {
 /* Card */
 .card-container {
   position: relative;
-  max-width: 226px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -749,7 +749,7 @@ code {
   cursor: pointer;
   background-color: #f3f3f3;
   padding: 10px;
-  max-width: 220px;
+  max-width: 5000px;
   text-align: left;
   margin: 0 auto;
   position: absolute;
@@ -772,7 +772,7 @@ code {
 .card .index {
   background-color: rgba(0, 0, 0, 0.2);
   color: #fff;
-  line-height: 20px;
+  line-height: inherit;
   font-size: 14px;
   position: absolute;
   top: 0;
