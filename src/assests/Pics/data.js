@@ -3,7 +3,7 @@ const data = {
     {
         "_id": "593e9297e17df20c4a237d42",
         "index": 0,
-        "picture": "https://ihatetomatoes.net/demos/_rw/01-real-estate/tn_property01.jpg",
+        "picture": "https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1fbaeaadb74ca77f009149b3af3a2cb7&auto=format&fit=crop&w=2700&q=80",
     },
     {
         "_id": "593e9297ec4cca9c56bf61af",
