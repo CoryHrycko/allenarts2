@@ -92,6 +92,9 @@ code {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+  left: -3px;
+  top: 129px;
 }
 
 .mainShapeTitle3 {
@@ -99,6 +102,9 @@ code {
   grid-row: 4/auto;
   -ms-grid-column: 3;
   grid-column: 3;
+  position: relative;
+  left: 4px;
+  top: 130px;
 }
 
 .mainShapeTitle4 {
@@ -106,6 +112,9 @@ code {
   grid-row: 4/auto;
   -ms-grid-column: 4;
   grid-column: 4;
+  left: 0px;
+  top: 129px;
+  position: relative;
 }
 
 .bgPic {
@@ -177,6 +186,42 @@ code {
   color: #2a2522;
 }
 
+.nextButton {
+  position: relative;
+  left: 305px;
+  top: 258px;
+  will-change: top, left;
+  background-color: #8b8989;
+  color: black;
+  border: 2px solid #318014;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.prevButton {
+  position: relative;
+  left: -303px;
+  top: 260px;
+  bottom: -282px;
+  right: 303px;
+  background-color: #8b8989;
+  color: black;
+  border: 2px solid #318014;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.prevButton:hover, .nextButton:hover {
+  background-color: #318014;
+  color: #ede8e8;
+}
+
 /*@keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -185,6 +230,14 @@ code {
     transform: rotate(360deg);
   }
 }
+
+-------------------------------Drawing space
+position: relative; left: 270px; top: 258px; will-change: top, left;
+position: relative; left: -362px; top: 260px;
+---
+position: relative; left: -3px; top: 129px;2
+position: relative; left: 4px; top: 130px;3
+left: 0px; top: 129px; position: relative; 4
 */
 /* Style the video: 100% width and height to cover the entire window */
 #background-video {

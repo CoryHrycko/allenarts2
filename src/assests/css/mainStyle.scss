@@ -110,16 +110,27 @@ $Csucess:hsl(104, 73%, 29%);
   grid-column: 2;
   grid-row:4/auto;
   justify-content: center;
+  position: relative; 
+  left: -3px; 
+  top: 129px;
 }
 .mainShapeTitle3{
   background:$snow2;
   grid-row:4/auto;
   grid-column: 3;
+  position: relative; 
+  left: 4px; 
+  top: 130px;
+
 }
 .mainShapeTitle4{
   background:$cafeamericano;
   grid-row:4/auto;
   grid-column: 4;
+  left: 0px; 
+  top: 129px; 
+  position: relative; 
+
 }
 
 
@@ -173,6 +184,35 @@ $Csucess:hsl(104, 73%, 29%);
 .App-link {
   color: $ivoryblack;
 }
+.nextButton{
+  position: relative; 
+  left: 305px; 
+  top: 258px; 
+  will-change: top, left;
+  background-color: $snow4; 
+  color: black; 
+  border: 2px solid $Csucess;
+  justify-content: start;
+  transition: 500ms;
+  }
+.prevButton{
+  position: relative; 
+  left: -303px; 
+  top: 260px; 
+  bottom: -282px; 
+  right: 303px;
+  background-color: $snow4; 
+  color: black; 
+  border: 2px solid $Csucess;
+  justify-content: start;
+  transition: 500ms;
+
+}
+
+.prevButton:hover , .nextButton:hover{
+  background-color: $Csucess;
+  color: $snow2;
+}
 //----------------------------------animations
 /*@keyframes App-logo-spin {
   from {
@@ -182,6 +222,14 @@ $Csucess:hsl(104, 73%, 29%);
     transform: rotate(360deg);
   }
 }
+
+-------------------------------Drawing space
+position: relative; left: 270px; top: 258px; will-change: top, left;
+position: relative; left: -362px; top: 260px;
+---
+position: relative; left: -3px; top: 129px;2
+position: relative; left: 4px; top: 130px;3
+left: 0px; top: 129px; position: relative; 4
 */
 //---------------------------------------fucking video
 /* Style the video: 100% width and height to cover the entire window */
