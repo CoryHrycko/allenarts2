@@ -103,8 +103,9 @@ code {
   -ms-grid-column: 3;
   grid-column: 3;
   position: relative;
-  left: 4px;
-  top: 130px;
+  left: 1px;
+  top: 131px;
+  will-change: top, left;
 }
 
 .mainShapeTitle4 {

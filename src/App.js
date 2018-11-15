@@ -108,10 +108,10 @@ backdropClickHandler=()=>{
     <div className="mainBg">
      <div className="mainShape">
    <div className="mainShapeTitle">
-     <h3> In the back is either going to be a. a series of videos or slide show carosal</h3>
+     <h3> Recent Events!</h3>
         <button hidden="true" onClick={() => this.toggleAppear()}>Appear: {`${appearHome}`}</button>
-        <button className="nextButton" onClick={() => this.nextProperty()} disabled={property.index === data.properties.length-1}>Next</button>
-         <button className="prevButton" onClick={() => this.prevProperty()} disabled={property.index === 0}>Prev</button>
+        <button className="nextButton" onClick={() => this.nextProperty()} disabled={property.index === data.properties.length-1}>&gt;</button>
+         <button className="prevButton" onClick={() => this.prevProperty()} disabled={property.index === 0}>&lt;</button>
         <CSSTransition
         in={appearHome}
         appear={true}
