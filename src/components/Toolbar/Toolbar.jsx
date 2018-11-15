@@ -15,7 +15,7 @@ const toolbar = props => (
                     <li><a href="x">Bio</a></li>
                 </ul>
             </div>
-        </nav>
+        </nav> 
     </header>
 );
 
