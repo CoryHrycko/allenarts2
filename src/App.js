@@ -124,13 +124,22 @@ backdropClickHandler=()=>{
      <h3>> Calendir endpoint goes in here<br></br>,<br></br>,<br></br>,<br></br>,<br></br>,<br></br></h3>
    </div>
    <div className="mainShapeTitle4">
-     <h3>Book!</h3>
-     <div className="bookInput">
-      <input className="bookName" placeholder="Name of Organization"></input>
-      <input className="bookDate" datatype="date" placeholder="MM/DD/YYYY"></input>
-      <input className="bookEmail" placeholder="example@example.coms"></input>
-      <textarea className="bookDescribes" placeholder="Please describe the event"></textarea>
-      <input type="submit"  value="Submit your request" />
+     <h3>Book!(PHP is inserted here to set up an email alert to the manager and schedule the event in the database which then takes it and compiles it onto the calendir</h3>
+    <div className="bookInput">
+    <form method="post" action="*">{/*<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  */}
+      <input className="bookName" placeholder="Name of Organization"></input>{/*   Name: <input type="text" name="name" value="<?php echo $name;?>">
+  <span class="error">* <?php echo $nameErr;?></span>
+  <br><br> */}
+      <input className="bookDate" datatype="date" placeholder="MM/DD/YYYY"></input>{/*   E-mail: <input type="text" name="date" value="<?php echo $date;?>">
+  <span class="error">* <?php echo $dateErr;?></span>
+  <br><br> */}
+      <input className="bookEmail" placeholder="example@example.coms"></input>{/*   E-mail: <input type="text" name="email" value="<?php echo $email;?>">
+  <span class="error">* <?php echo $emailErr;?></span>
+  <br><br> */}
+      <textarea className="bookDescribes" placeholder="Please describe the event"></textarea>{/*   Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
+  <br><br> */}
+      <input type="submit"  value="Submit your request" />{/**/}
+    </form>
     </div>
    </div>
    </div>
