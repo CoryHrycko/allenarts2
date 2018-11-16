@@ -9,7 +9,7 @@ import Footer from './containers/footer/Footer.js'
 import { CSSTransition } from "react-transition-group";
 import data from './assests/Pics/data';
 import Home from "./assests/Pics/homes";
-
+import Example from "./components/bgVideo"
  
 const mapStateToProps = state => ({
   ...state
@@ -94,7 +94,7 @@ backdropClickHandler=()=>{
           <img src={Capture} className="App-logo" alt="logo" />
           </div>
         <div className="AppTitle">
-          <h1 className="App-title">Allen Arts Music</h1>
+          <Example/>     
         </div> 
         {backdrop}
       </div>
