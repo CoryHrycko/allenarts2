@@ -190,6 +190,10 @@ code {
   color: #2a2522;
 }
 
+.nextButton, .prevButton {
+  font-size: 50px;
+}
+
 .nextButton {
   position: relative;
   left: 305px;
@@ -224,7 +228,6 @@ code {
 .prevButton:hover, .nextButton:hover {
   background-color: #318014;
   color: #ede8e8;
-  font-size: 50px;
 }
 
 #background-video {

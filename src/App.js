@@ -9,7 +9,6 @@ import Footer from './containers/footer/Footer.js'
 import { CSSTransition } from "react-transition-group";
 import data from './assests/Pics/data';
 import Home from "./assests/Pics/homes";
-import Example from "./components/bgVideo"
  
 const mapStateToProps = state => ({
   ...state
@@ -105,7 +104,7 @@ backdropClickHandler=()=>{
     <div className="mainBg">
      <div className="mainShape">
    <div className="mainShapeTitle">
-     <h3> Recent Events!</h3>
+     <h3> Recent Events!(Api End point get parsed here.)</h3>
         <button hidden="true" onClick={() => this.toggleAppear()}>Appear: {`${appearHome}`}</button>
         <button className="nextButton" onClick={() => this.nextProperty()} disabled={property.index === data.properties.length-1}>&gt;</button>
          <button className="prevButton" onClick={() => this.prevProperty()} disabled={property.index === 0}>&lt;</button>
@@ -119,13 +118,20 @@ backdropClickHandler=()=>{
         </CSSTransition>
    </div>
    <div className="mainShapeTitle2">
-     <h3>> some sort of Events</h3>
+     <h3> PAst events go in here</h3>
    </div>
    <div className="mainShapeTitle3">
-     <h3>> a claender of events,<br></br>,<br></br>,<br></br>,<br></br>,<br></br>,<br></br></h3>
+     <h3>> Calendir endpoint goes in here<br></br>,<br></br>,<br></br>,<br></br>,<br></br>,<br></br></h3>
    </div>
    <div className="mainShapeTitle4">
-     <h3>> Contact Form</h3>
+     <h3>Book!</h3>
+     <div className="bookInput">
+      <input className="bookName" placeholder="Name of Organization"></input>
+      <input className="bookDate" datatype="date" placeholder="MM/DD/YYYY"></input>
+      <input className="bookEmail" placeholder="example@example.coms"></input>
+      <textarea className="bookDescribes" placeholder="Please describe the event"></textarea>
+      <input type="submit"  value="Submit your request" />
+    </div>
    </div>
    </div>
    </div>

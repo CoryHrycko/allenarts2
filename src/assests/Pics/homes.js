@@ -7,7 +7,7 @@ const Home = ({property}) => {
     return(
         <div className="page">
             <section>
-                <h1>React Transition Group classes breakdown.</h1>
+                <h1>Instagram Hook in Goes here. So your instagram will autoupdate your site.</h1>
             </section>
             
             <TransitionGroup className="card-container">

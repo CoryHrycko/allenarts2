@@ -186,6 +186,9 @@ $Csucess:hsl(104, 73%, 29%);
 .App-link {
   color: $ivoryblack;
 }
+.nextButton, .prevButton{
+  font-size: 50px;
+}
 .nextButton{
   position: relative; 
   left: 305px; 
@@ -214,7 +217,6 @@ $Csucess:hsl(104, 73%, 29%);
 .prevButton:hover , .nextButton:hover{
   background-color: $Csucess;
   color: $snow2;
-  font-size: 50px;
 }
 #background-video{
 
