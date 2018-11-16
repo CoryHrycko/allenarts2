@@ -88,7 +88,7 @@ backdropClickHandler=()=>{
       
     <div className="App">
       <header  className="heropanel">
-        <CSSTransition
+        <CSSTransition 
         in={appearHome}
         appear={true}
         timeout={5000}
