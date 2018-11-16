@@ -90,9 +90,9 @@ backdropClickHandler=()=>{
         <div className="appLogoContainer">
           <img src={Capture} className="App-logo" alt="logo" />
           </div>
-        <div className="AppTitle">
+        {/* <div className="AppTitle"> 
           <Example/>     
-        </div> 
+        </div> */}
         {backdrop}
       </div>
          {/* <Home property={property} /> */}
