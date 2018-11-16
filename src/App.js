@@ -76,6 +76,16 @@ backdropClickHandler=()=>{
 
 
     return (
+
+
+
+
+
+
+
+
+
+      
     <div className="App">
       <header  className="heropanel">
         <CSSTransition
