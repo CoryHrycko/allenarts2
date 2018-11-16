@@ -79,9 +79,6 @@ backdropClickHandler=()=>{
     return (
     <div className="App">
       <header  className="heropanel">
-         {/* <button onClick={() => this.toggleAppear()}>Appear: {`${appearHome}`}</button> */}
-        {/* <button onClick={() => this.nextProperty()} disabled={property.index === data.properties.length-1}>Next</button> */}
-        {/* <button onClick={() => this.prevProperty()} disabled={property.index === 0}>Prev</button> */}
         <CSSTransition
         in={appearHome}
         appear={true}
