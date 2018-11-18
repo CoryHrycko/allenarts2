@@ -87,7 +87,7 @@ backdropClickHandler=()=>{
 
 // ----------------------------------------page intro
       
-    <div className="App">
+    <div className="App" id="c1">
       <header  className="heropanel">
         <CSSTransition 
         in={appearHome}
@@ -98,9 +98,9 @@ backdropClickHandler=()=>{
 
       <div className="v-header container">
         <div className="appLogoContainer">
-        <button className="entering" onclick="entering()">Press to enter
+        <a className="entering" href="#c2">Press to enter
           <img src={Capture} className="App-logo" alt="logo" />
-          </button>
+          </a>
           </div>
         {/* <div className="AppTitle"> 
           <Example/>     
@@ -115,17 +115,21 @@ backdropClickHandler=()=>{
   
     </header>
 {/* -------------------------------------------page main */}
-    <div className="page1">
+    <div className="page1" id="c2">
     <img src={Capture} className="App-logo2" alt="logo" />
         <div className="left">
-          <h1>Woah</h1>
+          <a className="entering" href="#c3">
+            <h1>Woah</h1>
+          </a>
         </div>
         <div className="right">
-          <h1>Woah</h1>
+          <a className="entering" href="#c4">
+              <h1>Woah</h1>
+          </a>
         </div>
     </div> 
-{/* -------------------------------------main contact and calendir*/}
-    <div className="mainBg">
+{/* ------------------------------------main contact and calendir*/}
+    <div className="mainBg" id="c3">
      <div className="mainShape">
    <div className="mainShapeTitle">
      <h3> Recent Events!(Api End point get parsed here.)</h3>
@@ -141,7 +145,8 @@ backdropClickHandler=()=>{
 
         </CSSTransition>
    </div>
-   <div className="mainShapeTitle2">
+   {/* ----------------------------------------contact and scheduling */}
+   <div className="mainShapeTitle2" id="c4">
      <h3> PAst events go in here</h3>
    </div>
    <div className="mainShapeTitle3">
