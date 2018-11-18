@@ -66,6 +66,8 @@ backdropClickHandler=()=>{
 };
 
 
+
+
   render() {
     const {appearHome, property} = this.state;
     let backdrop;
@@ -97,7 +99,9 @@ backdropClickHandler=()=>{
 
       <div className="v-header container">
         <div className="appLogoContainer">
+        <button className="entering" onclick="entering()">Press to enter
           <img src={Capture} className="App-logo" alt="logo" />
+          </button>
           </div>
         {/* <div className="AppTitle"> 
           <Example/>     
