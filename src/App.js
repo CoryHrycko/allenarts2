@@ -115,6 +115,7 @@ backdropClickHandler=()=>{
   
     </header>
     <div className="page1">
+    <img src={Capture} className="App-logo2" alt="logo" />
         <div className="left">
           <h1>Woah</h1>
         </div>

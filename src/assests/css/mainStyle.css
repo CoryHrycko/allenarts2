@@ -37,25 +37,35 @@ code {
   width: 100%;
 }
 
+.page1 .App-logo2 {
+  height: 20vh;
+  margin-top: 5vh;
+  margin-left: 0vw;
+  position: absolute;
+  display: inline-block;
+}
+
 .page1 .left {
   border-right: 1px black solid;
   -ms-grid-column-align: center;
       justify-self: center;
-  margin-right: 25%;
   margin-top: 10rem;
   margin-bottom: 10rem;
   text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-right: 15%;
 }
 
 .page1 .right {
   border-left: 1px black solid;
   margin-top: 10rem;
   margin-bottom: 10rem;
-}
-
-.page1 .right .h1 {
-  margin: 21.44;
-  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-LEFT: 15%;
 }
 
 .heropanel {

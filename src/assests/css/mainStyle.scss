@@ -55,25 +55,34 @@ $Csucess:hsl(104, 73%, 29%);
   justify-self: center;
   height:100vh;
   width:100%;
+
+  .App-logo2{
+    height:20vh;
+    margin-top:5vh;
+    margin-left:0vw;
+    position: absolute;
+    display: inline-block
+  }
   .left{
     // height:40%;
     border-right: 1px black solid;
     justify-self: center;
-    margin-right:25%;
+    // margin-right:25%;
     margin-top:10rem;
     margin-bottom:10rem;
-    text-align: center; 
+    text-align: center;     
+    align-self: center;
+    padding-right: 15%;
+
   }
   .right{
     // height:40%;
     border-left: 1px black solid;
     margin-top:10rem;
     margin-bottom:10rem;
-    .h1{
-      margin:21.44;
-      text-align: center;
+    align-self: center;
+    padding-LEFT: 15%;
 
-    }
   }
 }
 .heropanel{
