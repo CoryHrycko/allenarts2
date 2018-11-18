@@ -129,6 +129,10 @@ code {
   max-width: 1200px;
 }
 
+.mainBg2 {
+  height: 100vh;
+}
+
 .mainShapeTitle {
   display: inline-block;
   grid-column: 2/-2;

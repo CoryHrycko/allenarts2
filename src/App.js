@@ -130,8 +130,11 @@ backdropClickHandler=()=>{
     </div> 
 {/* ------------------------------------main contact and calendir*/}
     <div className="mainBg2" id="c3">
+        Calendir of Events
     </div>
-    
+    <div className="mainBg2" id="c4">
+        Bookem
+    </div>
     
     {/* <div className="mainBg" id="c3">
      <div className="mainShape">
