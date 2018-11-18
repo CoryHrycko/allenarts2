@@ -121,7 +121,6 @@ backdropClickHandler=()=>{
         <div className="right">
           <h1>Woah</h1>
         </div>
-
     </div>
     <div className="mainBg">
      <div className="mainShape">
