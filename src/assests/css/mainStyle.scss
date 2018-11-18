@@ -1,7 +1,7 @@
 //---------------reset-------------------------
 HTML{
   --p:1.3em;
-  // overflow: hidden;
+  overflow: hidden;
 }
 body {
     margin: 0;
@@ -45,7 +45,7 @@ $Csucess:hsl(104, 73%, 29%);
   text-align: center;
 }
 .entering{
-  background:$P1color ;
+  background:$P1color;
   color: $snow2;
   font-size: 45px;
 }

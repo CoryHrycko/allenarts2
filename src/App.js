@@ -116,7 +116,7 @@ backdropClickHandler=()=>{
     </header>
 {/* -------------------------------------------page main */}
     <div className="page1" id="c2">
-    <img src={Capture} className="App-logo2" alt="logo" />
+    <div><a href="#c1"><img src={Capture} className="App-logo2" alt="logo" /></a></div>
         <div className="left">
           <a className="entering" href="#c3">
             <h1>Woah</h1>
@@ -130,10 +130,12 @@ backdropClickHandler=()=>{
     </div> 
 {/* ------------------------------------main contact and calendir*/}
     <div className="mainBg2" id="c3">
-        Calendir of Events
+          Calendir of Events
+        <a href="#c2">Back Home</a>
     </div>
     <div className="mainBg2" id="c4">
-        Bookem
+          Bookem
+        <a href="#c2">Back Home</a>
     </div>
     
     {/* <div className="mainBg" id="c3">
