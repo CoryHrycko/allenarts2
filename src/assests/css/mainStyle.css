@@ -261,7 +261,6 @@ left: 0px; top: 129px; position: relative; 4
 #background-video {
   height: 100%;
   width: 100%;
-  float: left;
   top: 0;
   padding: none;
   position: fixed;
