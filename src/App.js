@@ -85,7 +85,7 @@ backdropClickHandler=()=>{
 
 
 
-
+// ----------------------------------------page intro
       
     <div className="App">
       <header  className="heropanel">
@@ -114,6 +114,7 @@ backdropClickHandler=()=>{
         <SideDrawer show={this.state.sideDrawerOpen}/> 
   
     </header>
+{/* -------------------------------------------page main */}
     <div className="page1">
     <img src={Capture} className="App-logo2" alt="logo" />
         <div className="left">
@@ -122,7 +123,8 @@ backdropClickHandler=()=>{
         <div className="right">
           <h1>Woah</h1>
         </div>
-    </div>
+    </div> 
+{/* -------------------------------------main contact and calendir*/}
     <div className="mainBg">
      <div className="mainShape">
    <div className="mainShapeTitle">
