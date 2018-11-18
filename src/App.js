@@ -67,7 +67,6 @@ backdropClickHandler=()=>{
 
 
 
-
   render() {
     const {appearHome, property} = this.state;
     let backdrop;
@@ -115,6 +114,15 @@ backdropClickHandler=()=>{
         <SideDrawer show={this.state.sideDrawerOpen}/> 
   
     </header>
+    <div className="page1">
+        <div className="left">
+          <h1>Woah</h1>
+        </div>
+        <div className="right">
+          <h1>Woah</h1>
+        </div>
+
+    </div>
     <div className="mainBg">
      <div className="mainShape">
    <div className="mainShapeTitle">

@@ -1,3 +1,4 @@
+import "react" from React;
 // const Greeting = React.createClass({
 //     render:()=>{
 //         let classMale = "";
@@ -27,13 +28,13 @@
 // });
 
 
-constructor(){
+constructor() {
     super();
 
     this.state={
-        hideToolTip:false
+        hideToolTip:false,
     };
 };
-// handleChange(e) {
-//     this.setState({hideToolTip: true});
-// };
+handleChange(e) {
+    this.setState({hideToolTip: true});
+};
