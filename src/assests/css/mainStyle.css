@@ -39,6 +39,9 @@ code {
   width: 100%;
   -webkit-transition: ease-out 250ms;
   transition: ease-out 250ms;
+  background: black;
+  opacity: .99;
+  z-index: -3;
 }
 
 .page1 .App-logo2 {
@@ -71,6 +74,7 @@ code {
   background: #8b8989;
   -webkit-transition: ease-out 250ms;
   transition: ease-out 250ms;
+  opacity: .4;
 }
 
 .page1 .left a {
@@ -80,10 +84,13 @@ code {
 .page1 .leftVideo {
   position: absolute;
   height: 100vh;
-  width: 100vw;
+  width: 1000vw;
   z-index: -1;
-  margin-left: -16vw;
-  margin-top: -50vh;
+  margin-left: -1vw;
+  margin-top: -0vh;
+  background-size: cover;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .page1 .right {
@@ -103,6 +110,7 @@ code {
   background: #8b8989;
   -webkit-transition: ease-out 250ms;
   transition: ease-out 250ms;
+  opacity: .4;
 }
 
 .page1 .right a {
@@ -138,12 +146,10 @@ code {
 }
 
 .mainBg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   height: 100%;
   background: #ede8e8 url("https://images.unsplash.com/photo-1538402074774-8e624f3f7e5d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e0293f0d23f26cf12f31eba13a264bc6&auto=format&fit=crop&w=2775&q=80") no-repeat left center fixed;
   background-size: cover;
+  width: 100%;
 }
 
 .mainShape {
@@ -172,6 +178,18 @@ code {
 
 .mainBg2 {
   height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20px 600px 1fr;
+      grid-template-columns: 20px 600px 1fr;
+}
+
+.cal2 {
+  grid-column: 2 span;
+}
+
+._2link {
+  grid-column: 2 span;
 }
 
 .mainShapeTitle {

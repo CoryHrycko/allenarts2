@@ -116,11 +116,11 @@ backdropClickHandler=()=>{
     </header>
 {/* -------------------------------------------page main */}
     <div className="page1" id="c2">
-            {/* <div className="leftVideo">
-        <video controls autoPlay="autoplay" muted="true" loop>
-          <source src="http://www.coryhrycko.com/public/asset/images/Clock.webm" type="video/webm"/>
+            <div className="leftVideo">
+        <video  autoPlay="autoplay" muted="true" loop>
+          <source src="http://www.coryhrycko.com/public/asset/images/Synthesizer.mp4" type="video/mp4"/>
           <source src="myVideo.webm" type="video/webm"/>
-        </video> </div> */}
+        </video> </div>
         <div className="centerImg"><a href="#c1"><img src={Capture} className="App-logo2" alt="logo" /></a></div>
 
         <div className="left">
@@ -130,17 +130,19 @@ backdropClickHandler=()=>{
           </a>
         </div>
         <div className="right">
-        <video></video>
           <a className="entering" href="#c4">
               <h1>Shopping</h1>
           </a>
         </div>
     </div> 
 {/* ------------------------------------main contact and calendir*/}
+    <div className="mainBg">
     <div className="mainBg2" id="c3">
-          Calendir of Events
-        <a href="#c2">Back Home</a>
-    </div>
+          <div className="cal2">Calendir of Events</div>
+        <div className="_2link"><a href="#c2">Back Home</a>
+    </div></div></div>
+
+
     <div className="mainBg2" id="c4">
           Bookem
               

@@ -59,7 +59,9 @@ $Csucess:hsl(104, 73%, 29%);
   height:100vh;
   width:100%;
   transition: ease-out 250ms;
-
+  background: black;
+  opacity: .99;
+  z-index: -3;
   .App-logo2{
     height:20vh;
     margin-top:5vh;
@@ -84,6 +86,7 @@ $Csucess:hsl(104, 73%, 29%);
     &:hover{
       background: $snow4;
       transition: ease-out 250ms;
+      opacity: .4;
     }
     a{
       text-decoration: none;
@@ -91,10 +94,12 @@ $Csucess:hsl(104, 73%, 29%);
 .leftVideo{
       position: absolute;
       height: 100vh;
-      width: 100vw;
+      width: 1000vw;
       z-index: -1;
-      margin-left:-16vw;
-      margin-top: -50vh;
+      margin-left:-1vw;
+      margin-top: -0vh;
+      background-size: cover;
+      justify-self: center;
     }
   
   .right{
@@ -109,6 +114,7 @@ $Csucess:hsl(104, 73%, 29%);
     &:hover{
       background: $snow4;
       transition: ease-out 250ms;
+      opacity: .4;
     }
     a{
       text-decoration: none;
@@ -144,10 +150,10 @@ $Csucess:hsl(104, 73%, 29%);
   max-width: 1200px;
 }
 .mainBg{
-  display: flex;
   height:100%;
   background: $snow2 url("https://images.unsplash.com/photo-1538402074774-8e624f3f7e5d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e0293f0d23f26cf12f31eba13a264bc6&auto=format&fit=crop&w=2775&q=80") no-repeat left center fixed;
   background-size: cover;
+  width:100%;
 }
 .mainShape{
   display: grid;
@@ -173,6 +179,15 @@ $Csucess:hsl(104, 73%, 29%);
 //-----------------------------2nd edition main bg
 .mainBg2{
   height:100vh;
+  display: grid;
+  grid-template-columns:20px 600px 1fr
+}
+.cal2{
+  grid-column: 2 span;
+}
+._2link{
+  grid-column: 2 span;
+
 }
 // ---------------------------grid items
 
