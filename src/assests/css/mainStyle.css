@@ -1,6 +1,5 @@
 HTML {
   --p:1.3em;
-  overflow: hidden;
 }
 
 body {
@@ -23,6 +22,8 @@ code {
   background: #f0f0f0;
   color: #ede8e8;
   font-size: 45px;
+  -webkit-transition: ease-out 250ms;
+  transition: ease-out 250ms;
 }
 
 .page1 {
@@ -36,6 +37,8 @@ code {
   justify-self: center;
   height: 100vh;
   width: 100%;
+  -webkit-transition: ease-out 250ms;
+  transition: ease-out 250ms;
 }
 
 .page1 .App-logo2 {
@@ -44,6 +47,11 @@ code {
   margin-left: 0vw;
   position: absolute;
   display: inline-block;
+}
+
+.page1 .centerImg {
+  display: inline-block;
+  margin: 28.8px 0px 0px;
 }
 
 .page1 .left {
@@ -56,17 +64,49 @@ code {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  padding-right: 15%;
+  padding-right: 25%;
+}
+
+.page1 .left:hover {
+  background: #8b8989;
+  -webkit-transition: ease-out 250ms;
+  transition: ease-out 250ms;
+}
+
+.page1 .left a {
+  text-decoration: none;
+}
+
+.page1 .leftVideo {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  margin-left: -16vw;
+  margin-top: -50vh;
 }
 
 .page1 .right {
   border-left: 1px black solid;
   margin-top: 10rem;
   margin-bottom: 10rem;
+  padding-LEFT: 15%;
+  text-align: center;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  padding-LEFT: 15%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.page1 .right:hover {
+  background: #8b8989;
+  -webkit-transition: ease-out 250ms;
+  transition: ease-out 250ms;
+}
+
+.page1 .right a {
+  text-decoration: none;
 }
 
 .heropanel {

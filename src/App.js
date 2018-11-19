@@ -8,7 +8,7 @@ import Backdrop from './components/Backdrop/Backdrop.jsx';
 import Footer from './containers/footer/Footer.js'
 import { CSSTransition } from "react-transition-group";
 import data from './assests/Pics/data';
-import Home from "./assests/Pics/homes";
+// import Home from "./assests/Pics/homes";
  
 const mapStateToProps = state => ({
   ...state
@@ -68,7 +68,7 @@ backdropClickHandler=()=>{
 
 
   render() {
-    const {appearHome, property} = this.state;
+    const {appearHome} = this.state;
     let backdrop;
 
     if (this.state.sideDrawerOpen){
@@ -116,15 +116,23 @@ backdropClickHandler=()=>{
     </header>
 {/* -------------------------------------------page main */}
     <div className="page1" id="c2">
-    <div><a href="#c1"><img src={Capture} className="App-logo2" alt="logo" /></a></div>
+            {/* <div className="leftVideo">
+        <video controls autoPlay="autoplay" muted="true" loop>
+          <source src="http://www.coryhrycko.com/public/asset/images/Clock.webm" type="video/webm"/>
+          <source src="myVideo.webm" type="video/webm"/>
+        </video> </div> */}
+        <div className="centerImg"><a href="#c1"><img src={Capture} className="App-logo2" alt="logo" /></a></div>
+
         <div className="left">
+  
           <a className="entering" href="#c3">
-            <h1>Woah</h1>
+            <h1>Bands</h1>
           </a>
         </div>
         <div className="right">
+        <video></video>
           <a className="entering" href="#c4">
-              <h1>Woah</h1>
+              <h1>Shopping</h1>
           </a>
         </div>
     </div> 
@@ -135,6 +143,7 @@ backdropClickHandler=()=>{
     </div>
     <div className="mainBg2" id="c4">
           Bookem
+              
         <a href="#c2">Back Home</a>
     </div>
     

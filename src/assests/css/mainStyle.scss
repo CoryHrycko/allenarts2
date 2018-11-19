@@ -1,7 +1,7 @@
 //---------------reset-------------------------
 HTML{
   --p:1.3em;
-  overflow: hidden;
+  // overflow: hidden;
 }
 body {
     margin: 0;
@@ -48,7 +48,9 @@ $Csucess:hsl(104, 73%, 29%);
   background:$P1color;
   color: $snow2;
   font-size: 45px;
+  transition: ease-out 250ms;
 }
+
 .page1{
   display:flex;
   justify-content: center;
@@ -56,6 +58,7 @@ $Csucess:hsl(104, 73%, 29%);
   justify-self: center;
   height:100vh;
   width:100%;
+  transition: ease-out 250ms;
 
   .App-logo2{
     height:20vh;
@@ -63,6 +66,10 @@ $Csucess:hsl(104, 73%, 29%);
     margin-left:0vw;
     position: absolute;
     display: inline-block
+  }
+  .centerImg{
+    display: inline-block;
+    margin: 28.8px 0px 0px
   }
   .left{
     // height:40%;
@@ -73,17 +80,39 @@ $Csucess:hsl(104, 73%, 29%);
     margin-bottom:10rem;
     text-align: center;     
     align-self: center;
-    padding-right: 15%;
-
-  }
+    padding-right: 25%;
+    &:hover{
+      background: $snow4;
+      transition: ease-out 250ms;
+    }
+    a{
+      text-decoration: none;
+    }}
+.leftVideo{
+      position: absolute;
+      height: 100vh;
+      width: 100vw;
+      z-index: -1;
+      margin-left:-16vw;
+      margin-top: -50vh;
+    }
+  
   .right{
     // height:40%;
     border-left: 1px black solid;
     margin-top:10rem;
     margin-bottom:10rem;
-    align-self: center;
     padding-LEFT: 15%;
-
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    &:hover{
+      background: $snow4;
+      transition: ease-out 250ms;
+    }
+    a{
+      text-decoration: none;
+    }
   }
 }
 .heropanel{
