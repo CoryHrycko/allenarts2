@@ -2,8 +2,10 @@
   "name": "allenartsproto2",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://CoryHrycko.github.io/allenarts2/",
   "dependencies": {
     "classnames": "^2.2.6",
+    "gh-pages": "^2.0.1",
     "lodash": "^4.17.10",
     "raw-loader": "^0.5.1",
     "react": "^16.6.1",
@@ -20,6 +22,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run deploy",
+    "deploy": "gh-pages -d build",   
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

@@ -198,6 +198,6 @@ const cal = props => {
   </form>
 </section>
 
-);
+};
 
 export default cal
