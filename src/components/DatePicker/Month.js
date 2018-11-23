@@ -57,7 +57,8 @@ class Month extends React.PureComponent{
         const date = fullDate.getDate();
         return <div key={dayIndex}>{date}</div>
     }
-};
+}; 
+
 
 function abbrevFromWeekday(weekDay){
     return weekDay.substring(0,2);
