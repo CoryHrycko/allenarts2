@@ -834,6 +834,31 @@ opacity: 0;
   padding: 0 10px;
   
 }
+//-----------------------datepicker
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.MainContentDatePicker {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.DatePickerContainer {
+  max-width: 500px;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05),
+    0 1px 3px 0 rgba(63, 63, 68, 0.15);
+}
+
+.DatePickerContainer__Title {
+  font-size: 1.2rem;
+  color: #4f4f4f;
+}
 // ------------------------------------media queries
 
 

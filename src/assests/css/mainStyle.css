@@ -981,6 +981,51 @@ left: 0px; top: 129px; position: relative; 4
   padding: 0 10px;
 }
 
+@-webkit-keyframes App-logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.MainContentDatePicker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px;
+}
+
+.DatePickerContainer {
+  max-width: 500px;
+  background-color: #fff;
+  padding: 10px;
+  -webkit-box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
+          box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
+}
+
+.DatePickerContainer__Title {
+  font-size: 1.2rem;
+  color: #4f4f4f;
+}
+
 @media (max-width: 768px) {
   .toolBarNavItems {
     display: none;
