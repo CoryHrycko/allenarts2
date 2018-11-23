@@ -17,7 +17,7 @@ const calendar = props => (
               self.openDay(current);
             }, 500);
           }
-        }
+        } 
       
         Calendar.prototype.draw = function() {
           //Create Header
