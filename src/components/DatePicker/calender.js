@@ -1,11 +1,12 @@
 import React from 'react';
-
+import Month from './Month'
 class DatePicker extends React.PureComponent{
     render(){
         return(
             <div className="DatePickerContainer">
                 <div className="DatePickerContainer_Title">MARCH</div>
-                <div className="Month"></div></div>
+                <Month/>
+            </div>
         )
     }
 }
