@@ -98,7 +98,7 @@ backdropClickHandler=()=>{
 
       <div className="v-header container">
         <div className="appLogoContainer">
-        <a className="entering" href="#c2">Press to enter
+        <a className="entering" href="#c2">
           <img src={Capture} className="App-logo" alt="logo" />
           </a>
           </div>
@@ -126,20 +126,20 @@ backdropClickHandler=()=>{
         <div className="left">
   
           <a className="entering" href="#c3">
-            <h1>Bands</h1>
+            <h1>Calendar</h1>
           </a>
         </div>
         <div className="right">
           <a className="entering" href="#c4">
-              <h1>Shopping</h1>
+              <h1>Contact</h1>
           </a>
         </div>
     </div> 
 {/* ------------------------------------main contact and calendir*/}
     <div className="mainBg">
     <div className="mainBg2" id="c3">
-          <div className="cal2">Calendir of Events</div>
-        <div className="_2link"><a href="#c2">Back Home</a>
+          <div className="cal2">Calendar of Events</div>
+          <div className="_2link centerImg"><a href="#c2">Back Home</a>
     </div></div></div>
 
 
