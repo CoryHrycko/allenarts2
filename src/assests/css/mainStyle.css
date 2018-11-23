@@ -1044,6 +1044,12 @@ left: 0px; top: 129px; position: relative; 4
   text-align: center;
 }
 
+.Week {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media (max-width: 768px) {
   .toolBarNavItems {
     display: none;
