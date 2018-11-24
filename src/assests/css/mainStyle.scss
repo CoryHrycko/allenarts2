@@ -835,44 +835,105 @@ opacity: 0;
   
 }
 //-----------------------datepicker
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.calendar-container,
+.calendar,
+.calendar-header,
+td,
+tr {
+    padding: 0;
+    margin: 0;
 }
 
-.MainContentDatePicker {
-  display: flex;
-  justify-content: center;
-  margin: 20px;
+.calendar-container {
+    border: 2px solid skyblue;
 }
 
-.DatePickerContainer {
-  max-width: 500px;
-  background-color: #fff;
-  padding: 10px;
-  box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05),
-    0 1px 3px 0 rgba(63, 63, 68, 0.15);
+.calendar {
+    background-color: white;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
 }
 
-.DatePickerContainer__Title {
-  font-size: 1.2rem;
-  color: #4f4f4f;
+.calendar-header {
+    border-bottom: 1px dashed skyblue;
+    font-size: 1.6em;
 }
-.weekdayContainer{
-  display:flex;
+
+.calendar-header td {
+    border-spacing: 0;
+    padding-left: 5px;
 }
-.Weekday{
-  display:block;
-  flex:1 0 0%;
-  padding: 0.8rem;
-  background: transparent;
-  font-size: 1.2rem;
-  color: #637381;
-  text-align:center;
+
+.day,
+.empty-slot,
+.week-day {
+    text-align: center;
+    height: 40px;
 }
-.Week{
-  display:flex;
+
+.week-day {
+    font-size: 0.8em;
+}
+
+.day {
+    font-size: 0.8em;
+}
+
+.day {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+}
+
+.current-day {
+    background-color: #4285f4;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 2%;
+    color: white;
+}
+.selected-day {
+    background-color:yellow;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 2%;
+    color: black;
+}
+
+.month-popup {
+    position: absolute;
+    padding: 5px;
+    background: white;
+    border: 2px solid skyblue;
+}
+
+.month-popup div {
+    padding: 0.3em;
+}
+
+.nav-month {
+    position: absolute;
+    top: 0.6em;
+    font-size: 0.6em;
+    right:3px;
+}
+
+
+.editor-year {
+    max-width: 3.6em;
+}
+
+.label-month,
+.label-year {
+    font-size: 0.6em;
+}
+
+.label-month {
+    cursor: pointer;
 }
 // ------------------------------------media queries
 

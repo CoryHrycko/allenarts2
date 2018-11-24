@@ -8,7 +8,7 @@ import Backdrop from './components/Backdrop/Backdrop.jsx';
 import Footer from './containers/footer/Footer.js'
 import { CSSTransition } from "react-transition-group";
 import data from './assests/Pics/data';
-import Calendar from  './components/DatePicker/'
+import Clickcal from  './components/Cal/CalendarStateManagement'
 // import Home from "./assests/Pics/homes";
  
 const mapStateToProps = state => ({
@@ -140,7 +140,7 @@ backdropClickHandler=()=>{
     <div className="mainBg">
     <div className="mainBg2" id="c3">
           <div className="cal2">Calendar of Events</div>
-          <Calendar/>
+          <Clickcal/>
           <div className="_2link centerImg"><a href="#c2">Back Home</a>
     </div></div></div>
 
