@@ -8,7 +8,7 @@ import Backdrop from './components/Backdrop/Backdrop.jsx';
 import Footer from './containers/footer/Footer.js'
 import { CSSTransition } from "react-transition-group";
 import data from './assests/Pics/data';
-import DatePicker from  './components/DatePicker/calender'
+import DatePicker from  './components/DatePicker/DatePicker'
 // import Home from "./assests/Pics/homes";
  
 const mapStateToProps = state => ({
