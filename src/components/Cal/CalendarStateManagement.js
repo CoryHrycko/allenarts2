@@ -13,7 +13,7 @@ class Clickcal extends Component {
     alert(day); 
   }
   
-  render() {
+  render() { 
     return (
       <div className="">
         <Calendar style={style} width="302px" 
