@@ -10,7 +10,7 @@ const style = {
 
 class Clickcal extends Component {
   onDayClick = (e, day) => {
-    alert(day);
+    alert(day); 
   }
   
   render() {
