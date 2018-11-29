@@ -5,7 +5,7 @@ import Calendar from '../DatePicker/';
 
 const style = {
   position: "relative",
-  margin: "50px auto"
+  margin: "50px auto" 
 } 
 
 class Clickcal extends Component {
