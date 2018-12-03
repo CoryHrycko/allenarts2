@@ -125,7 +125,7 @@ backdropClickHandler=()=>{
         <div className="centerImg"><a href="#c1"><img src={Capture} className="App-logo2" alt="logo" /></a></div>
 
         <div className="left">
-  
+   
           <a className="entering" href="#c3">
             <h1>Calendar</h1>
           </a>
